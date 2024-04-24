@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Docker Stats</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+<script src="script.js"></script>
+</head>
+<body>
+<h1>Docker Container Stats</h1>
+<table id="statsTable">
+  <thead>
+    <tr>
+      <th>Engine</th>
+      <th>Pod</th>
+      <th>Name</th>
+      <th>CPU%</th>
+      <th>MEM</th>
+      <th>MAX</th>
+      <th>IOR</th>
+      <th>IOW</th>
+      <th>RX</th>
+      <th>TX</th>
+    </tr>
+  </thead>
+  <tbody id="containers">
+    <!-- Stats will be inserted here -->
+  </tbody>
+  <tfoot>
+    <tr id="totals">
+      <td colspan="12">Totals will be calculated here</td>
+    </tr>
+  </tfoot>
+</table>
+</body>
+</html>
